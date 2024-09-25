@@ -1,0 +1,13 @@
+<div id="<%= dom_id post %>">
+
+  <% if post.poster.attached? %>
+    <%= image_tag post.poster.variant(resize_to_fill: [1600, 300]), class: "img-fluid" %>
+  <% end %>
+
+  <h1 class="position-absolute top-50 start-50 translate-middle text-white text-center">
+    <%= post.title %>
+  </h1>
+
+  <%= post.content %>
+
+</div>
