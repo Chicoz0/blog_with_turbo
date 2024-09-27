@@ -5,7 +5,19 @@ class CommentsController < ApplicationController
     @comment = @post.comments.new(comment_params)
     @comment.session = session.id
     @comment.save
-    redirect_to @post
+    # redirect_to @post
+    # render turbo_stream: [
+    #   turbo_stream.replace(
+    #     "new_comment",
+    #     partial: "comments/new",
+    #     locals: { post: @post, comment: Comment.new }
+    #   ), 
+    #   turbo_stream.append(
+    #     "comments",
+    #     partial: "comments/comment",
+    #     locals: { post: @post, comment: @comment}
+    #   )
+    # ]
   end
 
   def destroy

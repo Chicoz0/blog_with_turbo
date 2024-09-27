@@ -101,6 +101,7 @@ GEM
     drb (2.2.1)
     erubi (1.13.0)
     ffi (1.17.0-x64-mingw-ucrt)
+    ffi (1.17.0-x86_64-linux-gnu)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.6)
@@ -301,7 +302,7 @@ DEPENDENCIES
   sprockets-rails
   sqlite3 (>= 1.4)
   stimulus-rails
-  turbo-rails
+  turbo-rails (= 2.0.10)
   tzinfo-data
   web-console
 

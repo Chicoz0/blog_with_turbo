@@ -4,10 +4,12 @@
     <title><%= content_for(:title) || "Blog With Turbo" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <%= turbo_refreshes_with method: :morph, scroll: :preserve %>
+    <%= yield :head %>
+    
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= yield :head %>
 
     <link rel="manifest" href="/manifest.json">
     <link rel="icon" href="/icon.png" type="image/png">
