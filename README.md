@@ -1,6 +1,6 @@
 # README
 
-# User Authentication System
+# Blog with Turbo Updates
 
 This project is a simples blog alike app. The purpose of this app was to demonstrate skills on how to use turbo-links in Ruby on Rails.
 
